@@ -81,5 +81,47 @@
   });
 </script>
 
+  <div id="endBox" clas="text-box">
+    <h2> About me </h2>
+    <p> Lets get started </p>
+  </div>
+  .text-box {
+  position: fixed;
+  left: 20px;
+  bottom: 20px:
+  width: 240;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #444;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: 0.4s ease;
+  z-index: 9999;
+  }
+  .text-obx.show {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
+  <script> 
+  windoew.addEventListner("scroll",
+                          function () { 
+                          const box=
+                            document.getElementById("endBox");
+                            if (windows.innerHeight + 
+                                window.scrolly >=
+                                document.body.offsetHeight - 5) {
+                              
+                            box.classList.add(show");
+                            } else {
+                              box.classList.remove("show");
+                            }
+                          });
+  </script>
+</body>
+</html>
+  
+
 </body>
 </html>
