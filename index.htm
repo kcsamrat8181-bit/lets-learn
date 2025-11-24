@@ -6,15 +6,14 @@
 <title>Sunrise & Stars Scroll Effect</title>
 
 <style>
-  /* Sky background */
+
   body {
-    height: 200vh; /* scrolling area */
+    height: 200vh;
     margin: 0;
     overflow-x: hidden;
     background: linear-gradient(to bottom, #001, #87CEEB);
   }
 
-  /* ⭐ Stars at the top (night sky) */
   .stars {
     position: fixed;
     top: 0;
@@ -43,11 +42,10 @@
     background-repeat: no-repeat;
   }
 
-  /* 🌞 Sun */
   .sun {
     position: fixed;
     bottom: 0;
-    left: 30px; /* move to left corner */
+    right: 30px;
     width: 150px;
     height: 150px;
     background: radial-gradient(circle, #FFD700, #FFA500);
@@ -59,18 +57,15 @@
 </head>
 <body>
 
-<!-- ⭐ Stars layer -->
 <div class="stars"></div>
 
-<!-- 🌞 Sun -->
 <div class="sun" id="sun"></div>
 
-<!-- Your webpage content can go below -->
 <h1 style="padding: 20px; color: white;">Scroll Down to See Sunrise Effect</h1>
 <p style="padding: 20px; color: white;"><a href="http://www.youtube.com/@Syrexxyy-v3o">subscribe me</a><br>
                                         I am trying to learn programming and I have started with learning to make websites.</p>
 
-<!-- ☀ Sun Scroll Animation -->
+
 <script>
   window.addEventListener("scroll", () => {
     const sun = document.getElementById("sun");
