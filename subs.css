@@ -1,1 +1,94 @@
+body {
+  height: 200vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #001, #87CEEB);
+  font-family: Arial, sans-serif;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background: transparent;
+  pointer-events: none;
+}
+
+.stars::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 40% 80%, white, transparent),
+    radial-gradient(2px 2px at 70% 50%, white, transparent),
+    radial-gradient(2px 2px at 90% 20%, white, transparent),
+    radial-gradient(2px 2px at 10% 70%, white, transparent),
+    radial-gradient(2px 2px at 50% 10%, white, transparent),
+    radial-gradient(2px 2px at 30% 90%, white, transparent),
+    radial-gradient(2px 2px at 80% 40%, white, transparent),
+    radial-gradient(2px 2px at 60% 60%, white, transparent);
+  background-repeat: no-repeat;
+}
+
+.sun {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #FFD700, #FFA500);
+  border-radius: 50%;
+  transition: bottom 0.2s ease-out;
+}
+
+.glow-button {
+  padding: 12px 24px;
+  background: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 12px #00ffff, 0 0 24px #00ffff;
+  background: rgba(0, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.end-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 600px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.white-box p:first-child {
+  color: olive;
+  font-size: 35px;
+}
+
+.white-box p:last-child {
+  color: black;
+  font-size: 20px;
+}
 
