@@ -119,6 +119,6 @@ body {
     opacity: 1;
   }
   100% {
-    transform: translate(110vh);
+    transform: translate(110vw, 110vh);
   }
 }
