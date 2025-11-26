@@ -109,14 +109,16 @@ body {
   background: white;
   border-radius: 50%;
   opacity: 0.8;
-  animation: fall linear infinite;
+  filter: blur(1px);
+  animation: DigonalFall linear infinite;
 }
 
-@keyframes fall {
+@keyframes digonalFall {
   0% {
-    transform: translateY(-10vh);
+    transform: translate(0, 0);
+    opacity: 1;
   }
   100% {
-    transform: translateY(110vh);
+    transform: translate(110vh);
   }
 }
