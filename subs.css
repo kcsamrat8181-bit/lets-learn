@@ -1,5 +1,5 @@
 body {
-  height: 200vh;
+  height: 400vh;
   margin: 0;
   overflow-x: hidden;
   background: linear-gradient(to bottom, #001, #87CEEB);
@@ -104,7 +104,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 400vh;
+  height: 100vh;
   pointer-events: none;
   overflow: hidden;
   z-index: 9999;
