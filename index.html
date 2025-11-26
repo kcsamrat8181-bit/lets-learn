@@ -48,5 +48,23 @@
 
   <div id="starfall"> </div>
 
+  <script>
+  function createStar() {
+  const star = document.createElement("div");
+  star.classList.add("star");
+
+  star.style.left = Math.random() * 100 + "vw";
+  star.style.animationDuration = 3 + Math.random() * 5 + "s";
+
+  document.getElementById("starfall").appendChild(star);
+
+  setTimeout(() => {
+    star.remove();
+  }, 8000);
+}
+
+setInterval(createStar, 150);
+</script>
+
 </body>
 </html>
