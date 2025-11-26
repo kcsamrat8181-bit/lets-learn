@@ -46,33 +46,9 @@
   </div>
 </section>
 
-  <div id="starfall"> </div>
+<div id="starfall"></div>
 
-  <script>
-  function createDiagonalStar() {
-  const star = document.createElement("div");
-  star.classList.add("star");
-
-  
-  star.style.left = Math.random() * 10 + "vw";
-  star.style.top = Math.random() * 10 + "vh";
-
-  
-  star.style.animationDuration = (3 + Math.random() * 4) + "s";
-    
-  let size = 2 + Math.random() * 3;
-  star.style.width = size + "px";
-  star.style.height = size + "px";
-
-  document.getElementById("diagonal-stars").appendChild(star);
-
-  setTimeout(() => {
-    star.remove();
-  }, 7000);
-}
-
-setInterval(createDiagonalStar, 80);
-</script>
+<script src="js/starfall.js"></script>
 
 </body>
 </html>
