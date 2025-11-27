@@ -118,33 +118,6 @@ body {
 }
 
 
-.end-space {
-  height: 200vh;
-}
-
-.trans-box {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto 40px auto;
-  padding: 30px;
-  border: 2px solid cyan;
-  background: transparent;
-  border-radius: 12px;
-  text-align: center;
-  transition: 0.3s ease-in-out;
-}
-
-.trans-box p {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0;
-}
-
-.trans-box:hover {
-  box-shadow: 0 0 20px 3px red;
-  border-color: red;
-}
-
 .para-box {
   width: 80%;
   max-width: 600px;
