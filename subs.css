@@ -118,11 +118,11 @@ body {
 }
 
 
-.page-end-space {
+.end-space {
   height: 200vh;
 }
 
-.para-box {
+.trans-box {
   width: 80%;
   max-width: 600px;
   margin: 0 auto 40px auto;
@@ -134,13 +134,13 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.para-box p {
+.trans-box p {
   font-size: 1.2rem;
   color: #fff;
   margin: 0;
 }
 
-.para-box:hover {
+.trans-box:hover {
   box-shadow: 0 0 20px 3px red;
   border-color: red;
 }
