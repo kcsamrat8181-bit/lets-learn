@@ -145,6 +145,7 @@ body {
 
 .animated-circle {
   position: absolute;
+  margin: o auto;
   left: 50%;
   right: -50%;
   width: 100px;
