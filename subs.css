@@ -143,3 +143,15 @@ body {
   margin: 0;
 }
 
+.animated-circle {
+  color: red;
+  position: absolute;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, red, orange);
+  border-radius: 50%;
+  transition: bottom 0.2s ease-out;
+}
+  
+  
