@@ -150,7 +150,6 @@ body {
   height: 150px;
   background: radial-gradient(circle, red, orange);
   border-radius: 50%;
-  transition: bottom 0.2s ease-out;
 }
   
   
