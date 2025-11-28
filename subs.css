@@ -148,8 +148,8 @@ body {
   margin: 120vh 50px auto;
   left: 50%;
   right: -50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: radial-gradient(circle, red, orange);
   border-radius: 50%;
   transition: bottom 0.2s ease-out;
