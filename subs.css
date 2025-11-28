@@ -145,7 +145,7 @@ body {
 
 .animated-circle {
   position: absolute;
-  margin: 120vh auto 0px auto;
+  margin: 0px auto;
   width: 150px;
   height: 150px;
   background: radial-gradient(circle, red, orange);
