@@ -154,7 +154,7 @@ body {
   
   .circle1 { 
     position: absolute;
-    margin: 75vh auto;
+    margin: 90vh auto;
     width: 100px;
     height: 100px;
     background: radial-gradient(circle, green, blue);
