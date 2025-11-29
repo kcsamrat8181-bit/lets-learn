@@ -145,11 +145,22 @@ body {
 
 .animated-circle {
   position: absolute;
-  margin: 120vh auto 50px auto;
+  left: 100%;
+  right: -100%;
+  margin: 120vh auto;
   width: 150px;
   height: 150px;
   background: radial-gradient(circle, red, orange);
   border-radius: 50%;
 }
   
-  
+  .circle1 { 
+    position: absolute;
+    margin: 110vh;
+    left: 100%:
+    right: -100%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, green, blue);
+    border-radius: 50%;
+  }
