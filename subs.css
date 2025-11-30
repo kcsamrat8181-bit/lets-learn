@@ -182,6 +182,7 @@ posiyiton: absoute;
 .circle4 { 
 posiyiton: absoute;
   margin: 120vh auto;
+  left: 30px;
   width: 100px;
   height: 100px; 
   background: radial-gradient(circle, green, blue);
