@@ -160,3 +160,30 @@ body {
     background: radial-gradient(circle, green, blue);
     border-radius: 50%;
   }
+
+.circle2 { 
+position: absolute;
+  margin: 150vh auto;
+  width: 100px;
+height: 100px;
+  background: radial-gradient(circle, green, blue);
+border-radius: 50%;
+}
+
+.circle3 { 
+posiyiton: absoute;
+  margin: 120vh auto;
+  width: 100px;
+  height: 100px; 
+  background: radial-gradient(circle, green, blue);
+  border-radius:50%;
+}
+
+.circle4 { 
+posiyiton: absoute;
+  margin: 120vh auto;
+  width: 100px;
+  height: 100px; 
+  background: radial-gradient(circle, green, blue);
+  border-radius:50%;
+}
