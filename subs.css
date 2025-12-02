@@ -143,48 +143,60 @@ body {
   margin: 0;
 }
 
-.animated-circle {
-  position: absolute;
-  margin: 120vh auto;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle, red, orange);
-  border-radius: 50%;
+
+
+.solar-system {
+    position: relative;
+    width: 320px;
+    height: 350px;
+    text-align: center;
 }
-  
-  .circle1 { 
-    position: absolute;
-    margin: 90vh auto;
+
+.proxima-century {
     width: 100px;
     height: 100px;
-    background: radial-gradient(circle, green, blue);
+    background: orange;
     border-radius: 50%;
-  }
-
-.aloo-circle2 { 
-position: absolute;
-  margin: 150vh auto;
-  width: 100px;
-height: 100px;
-  background: radial-gradient(circle, green, blue);
-border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.circle-aloo3 { 
-position: absoute;
-  margin: 120vh auto;
-  width: 100px;
-  height: 100px; 
-  background: radial-gradient(circle, green, blue);
-  border-radius:50%;
+.label {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd27f;
 }
 
-.circle-potatoe4 { 
-position: absoute;
-  margin: 120vh auto;
-  right: 30px;
-  width: 100px;
-  height: 100px; 
-  background: radial-gradient(circle, green, blue);
-  border-radius:50%;
+.orbit {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 6s linear infinite;
+}
+
+.planet {
+    width: 25px;
+    height: 25px;
+    background: skyblue;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.p1 { top: 0; left: 50%; transform: translateX(-50%); }
+.p2 { right: 0; top: 50%; transform: translateY(-50%); }
+.p3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.p4 { left: 0; top: 50%; transform: translateY(-50%); }
+
+@keyframes rotate {
+    0%   { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
