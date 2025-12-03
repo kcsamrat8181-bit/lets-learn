@@ -205,6 +205,11 @@ body {
     color: black;
 }
 
+.planet i {
+    font-size: 22px;
+    color: black;
+}
+
 .p1 { top: 0; left: 50%; transform: translateX(-50%); }
 .p2 { right: 0; top: 50%; transform: translateY(-50%); }
 .p3 { bottom: 0; left: 50%; transform: translateX(-50%); }
