@@ -147,14 +147,14 @@ body {
 
 .solar-system {
     position: relative;
-    width: 320px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     text-align: center;
 }
 
 .proxima-century {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background: orange;
     border-radius: 50%;
     position: absolute;
@@ -165,7 +165,7 @@ body {
 
 .label {
     position: absolute;
-    top: 65%;
+    top: calc(50% + 100px);
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;
@@ -174,8 +174,8 @@ body {
 }
 
 .orbit {
-    width: 260px;
-    height: 260px;
+    width: 380px;
+    height: 380px;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -184,8 +184,8 @@ body {
 }
 
 .planet {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     background: skyblue;
     border-radius: 50%;
     position: absolute;
