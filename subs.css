@@ -161,6 +161,13 @@ body {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
 }
 
 .label {
@@ -189,6 +196,13 @@ body {
     background: skyblue;
     border-radius: 50%;
     position: absolute;
+
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
 }
 
 .p1 { top: 0; left: 50%; transform: translateX(-50%); }
