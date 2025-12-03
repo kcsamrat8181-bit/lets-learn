@@ -187,7 +187,7 @@ body {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: rotate 20s linear infinite;
+    animation: rotate 32s linear infinite;
 }
 
 .planet {
