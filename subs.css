@@ -239,16 +239,6 @@ body {
     0 0 50px #0ff inset;
 }
 
-body {
-  background: #0d0d0d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  perspective: 800px;
-}
-
 .scene {
   width: 200px;
   height: 200px;
