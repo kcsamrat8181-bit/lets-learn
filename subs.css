@@ -220,13 +220,6 @@ body {
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
 .glow-card {
   width: 300px;
   padding: 30px;
