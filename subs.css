@@ -222,14 +222,16 @@ body {
 
 .glow-card {
   width: 300px;
-  padding: 30px;
+  padding: 40px;
+  margin: 40px auto;
   background: #111;
   border-radius: 15px;
   color: #fff;
   text-align: center;
   transition: 0.3s ease;
   border: 2px solid transparent;
-  boc-shadow: 0 0 20px rgba(0, 225, 225, 0);
+  box-shadow: 0 0 20px rgba(0, 225, 225, 0);
+  cursor: pointer;
 }
 
 .glow-card:hover {
