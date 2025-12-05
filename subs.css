@@ -307,3 +307,19 @@ section#section2 {
   padding: 60px 20px;
   background: #fdf6f0;
 }
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fdf6f0;
+}
+
+.quote-box {
+  text-align: center;
+  max-width: 600px;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+}
