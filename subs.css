@@ -284,3 +284,20 @@ body {
   from { transform: rotateX(0deg) rotateY(0deg); }
   to { transform: rotateX(360deg) rotateY(360deg); }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  padding: 40px;
+}
+
+.scroll-btn {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
