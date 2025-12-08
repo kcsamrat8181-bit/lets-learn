@@ -317,8 +317,8 @@ section#section2 {
   border-radius: 50%;
   background: radial-gradient(circle, #000 40%, #222 80%, #000);
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 50px;
+  top: 50px;
   transform: translate(-50%, -50%);
   
   animation: transform 3s linear spin 5s linear infinite;;
