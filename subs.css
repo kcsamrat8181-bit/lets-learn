@@ -337,7 +337,7 @@ section#section2 {
   top: 50%;
   transform: translate(-50%, -50%);
   
-  animation: transform 3s linear;
+  animation: transform 3s linear spin 5s linear infinite;;
 }
 
 @keyframes spin {
