@@ -304,7 +304,7 @@ section {
   border-radius: 6px;
 }
 section#section2 {
-  height: auto;
+  height: 1000vh;
   padding: 60px 20px;
   background: #fdf6f0;
 }
