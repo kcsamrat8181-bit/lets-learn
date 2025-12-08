@@ -302,17 +302,23 @@ section {
   border-radius: 6px;
 }
 
-section#section2 {
-  height: auto;
-  padding: 60px 20px;
+.content {
+  max-height: 0;
+  overflow: hidden;
   background: #fdf6f0;
+  transition: max-height 0.6s ease;
+  padding: 0 20px;
+}
+
+#toggle:checked ~ .content {
+  max-height: 1000px; 
+  padding: 60px 20px; 
 }
 
 .quote-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background: #fdf6f0;
 }
 
@@ -323,3 +329,4 @@ section#section2 {
   font-style: italic;
   color: #333;
 }
+
