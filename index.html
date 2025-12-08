@@ -133,6 +133,25 @@ setInterval(createStar, 40);
       </div>
 
       <div class="black-hole"></div>
+    <script>
+  const hole = document.querySelector(".black-hole");
+
+  function moveBlackHole() {
+    const maxX = window.innerWidth - 150;
+    const maxY = window.innerHeight - 150;
+
+    const newX = Math.random() * maxX;
+    const newY = Math.random() * maxY;
+
+    hole.style.left = newX + "px";
+    hole.style.top = newY + "px";
+  }
+
+  setInterval(moveBlackHole, 2500);
+      
+  moveBlackHole();
+</script>
+
     
   </section>
 </body>
