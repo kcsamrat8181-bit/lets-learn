@@ -305,7 +305,7 @@ section {
 }
 
 /* Section 2 hidden by default */
-.content {
+section#section2 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease;
