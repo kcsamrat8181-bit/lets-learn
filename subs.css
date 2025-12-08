@@ -294,14 +294,6 @@ section {
   padding: 40px;
 }
 
-.scroll-btn {
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
 .content {
   max-height: 0;
   overflow: hidden;
