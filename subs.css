@@ -294,19 +294,31 @@ section {
   padding: 40px;
 }
 
+/* Button styling */
+.scroll-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Section 2 hidden by default */
 .content {
   max-height: 0;
   overflow: hidden;
-  background: #fdf6f0;
   transition: max-height 0.6s ease;
-  padding: 0 20px;
+  padding: 0 20px; /* remove vertical padding while hidden */
 }
 
+/* When toggle checked → slide down */
 #toggle:checked ~ .content {
-  max-height: 1000px; 
-  padding: 60px 20px; 
+  max-height: 500px; /* adjust if content is taller */
+  padding: 60px 20px; /* restore padding */
 }
 
+/* Quote section layout */
 .quote-section {
   display: flex;
   justify-content: center;
@@ -321,4 +333,5 @@ section {
   font-style: italic;
   color: #333;
 }
+
 
