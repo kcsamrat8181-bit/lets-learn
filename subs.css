@@ -321,10 +321,5 @@ section#section2 {
   top: 50px;
   transform: translate(-50%, -50%);
   
-  animation: transform 3s linear spin 5s linear infinite;;
-}
-
-@keyframes spin {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg); }
+  animation:  top 3s linear, left 3s linear;
 }
