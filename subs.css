@@ -305,6 +305,8 @@ section {
 }
 section#section2 {
   height: 1000vh;
+  position: relative;
+  overflow: hidden;
   padding: 60px 20px;
   background: #fdf6f0;
 }
