@@ -124,20 +124,16 @@ setInterval(createStar, 40);
     </a>
   </section>
 
-  <section id="section2" class="quote-section content">
-    
-  <div class="writings-box">
-        <p>"Beyond this physical form, there lies a boundless space, waiting to heal."</p> 
-        <span>- Samrat</span> 
-      </div>
+<section id="section2">
+  <div class="black-hole"></div>
+</section>
 
-      <div class="black-hole"></div>
-    
 <script>
+document.addEventListener("DOMContentLoaded", () => {
   const blackHole = document.querySelector(".black-hole");
+  const area = document.getElementById("section2");
 
   function moveBlackHole() {
-    const area = document.getElementById("section2");
     const maxX = area.clientWidth - 130;  
     const maxY = area.clientHeight - 130;
 
@@ -147,11 +143,10 @@ setInterval(createStar, 40);
     blackHole.style.transform = `translate(${randomX}px, ${randomY}px)`;
   }
 
-  setInterval(moveBlackHole, 3000);
-  
-  moveBlackHole();
-</script>
+  setInterval(moveBlackHole, 2500);
 
-  </section>
+  moveBlackHole();
+});
+</script>
 </body>
 </html>
