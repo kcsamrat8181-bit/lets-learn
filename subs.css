@@ -311,15 +311,20 @@ section#section2 {
   background: #fdf6f0;
 }
 
-.black-hole {
+#blackhole {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: radial-gradient(circle, #000 40%, #222 80%, #000);
-  position: absolute;
-  left: 50px;
-  top: 50px;
+  background: radial-gradient(circle, #000 40%, #111 60%, #000 90%);
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  
-  animation:  top 3s linear, left 3s linear;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
