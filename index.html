@@ -125,26 +125,8 @@ setInterval(createStar, 40);
   </section>
 
 <section id="section2">
-  <div class="black-hole"></div>
+  <div class="blackhole"></div>
 </section>
-
-<script>
-const blackHole = document.querySelector(".black-hole");
-const section2 = document.getElementById("section2");
-
-function moveBlackHole() {
-  const maxX = section2.clientWidth - 130;
-  const maxY = section2.clientHeight - 130;
-
-  const newX = Math.random() * maxX;
-  const newY = Math.random() * maxY;
-
-  blackHole.style.left = newX + "px";
-  blackHole.style.top = newY + "px";
-}
-
-setInterval(moveBlackHole, 3000);
-</script>
 
 </body>
 </html>
