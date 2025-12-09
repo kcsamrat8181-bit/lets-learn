@@ -128,5 +128,34 @@ setInterval(createStar, 40);
   <div class="blackhole"></div>
 </section>
 
+  <script>
+let angle = 0;
+
+function moveBlackHole() {
+  const bh = document.getElementById("blackhole");
+
+  // radius of movement
+  const radius = 80;
+
+  // center of screen
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  // slow orbit movement
+  angle += 0.002;
+
+  const x = centerX + radius * Math.cos(angle);
+  const y = centerY + radius * Math.sin(angle);
+
+  bh.style.left = x + "px";
+  bh.style.top = y + "px";
+
+  requestAnimationFrame(moveBlackHole);
+}
+
+moveBlackHole();
+</script>
+
+  
 </body>
 </html>
