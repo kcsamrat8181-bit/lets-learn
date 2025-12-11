@@ -127,44 +127,31 @@ setInterval(createStar, 40);
 <section id="section2">
   <div id="black-hole"></div>
 <script>
-const hero = document.querySelector(".hero-section");
-const voidSpot = document.getElementById("void-spot");
+const blackHole = document.getElementById("black-hole");
 
-// create a fake cursor
-const fakeCursor = document.createElement("div");
-fakeCursor.classList.add("fake-cursor");
-hero.appendChild(fakeCursor);
+// Orbit parameters
+const centerX = 300; // horizontal center of ellipse
+const centerY = 120; // vertical center of ellipse
+const radiusX = 220; // horizontal radius
+const radiusY = 60;  // vertical radius
+const speed = 0.002; // orbit speed
 
-const VOID_RADIUS = 90; // half of void diameter
+let angle = 0;
 
-hero.addEventListener("mousemove", (e) => {
-    const rect = hero.getBoundingClientRect();
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
+function animate() {
+    angle += speed;
 
-    // void center
-    const voidRect = voidSpot.getBoundingClientRect();
-    const voidX = voidRect.left - rect.left + voidRect.width / 2;
-    const voidY = voidRect.top - rect.top + voidRect.height / 2;
+    // Elliptical orbit
+    const x = centerX + Math.cos(angle) * radiusX;
+    const y = centerY + Math.sin(angle) * radiusY;
 
-    const dx = mouseX - voidX;
-    const dy = mouseY - voidY;
-    const dist = Math.sqrt(dx*dx + dy*dy);
+    blackHole.style.left = x + "px";
+    blackHole.style.top = y + "px";
 
-    let cursorX = mouseX;
-    let cursorY = mouseY;
+    requestAnimationFrame(animate);
+}
 
-    // if inside void, push it to the edge
-    if (dist < VOID_RADIUS) {
-        const angle = Math.atan2(dy, dx);
-        cursorX = voidX + Math.cos(angle) * VOID_RADIUS;
-        cursorY = voidY + Math.sin(angle) * VOID_RADIUS;
-    }
-
-    fakeCursor.style.left = cursorX + "px";
-    fakeCursor.style.top = cursorY + "px";
-});
-
+animate();
 
 </script>
     </section>
