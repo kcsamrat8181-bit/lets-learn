@@ -331,7 +331,7 @@ section#section2 {
     animation: rotateAxis 10s linear infinite;
 }
 
-.hero-section .content {
+.section2 .content {
     position: relative;
     padding: 200px 40px 0;
     text-align: center;
