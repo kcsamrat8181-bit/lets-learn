@@ -325,6 +325,16 @@ section#section2 {
     z-index: 3;
     filter: blur(2px);
 }
+  .fake-cursor {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
 
 /* Light bending illusion */
 body.distort {
