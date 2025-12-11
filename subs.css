@@ -321,6 +321,7 @@ width: 120px;
   background: radial-gradient(circle, #000 40%, #111 60%, #000 90%);
   box-shadow: 0 0 30px 12px rgba(0,0,0,0.6);
   transform: translate(-50%, -50%);
+  z-index: 999;
   animation: spin 8s linear infinite;
 }
 
