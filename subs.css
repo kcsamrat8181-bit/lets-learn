@@ -323,7 +323,7 @@ body {
 
 /* The VOID */
 #void-spot {
-    position: fixed;
+    position: absolute;
     width: 180px;
     height: 180px;
     border-radius: 50%;
