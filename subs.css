@@ -312,14 +312,14 @@ section#section2 {
 }
 
 #blackhole {
-  width: 120px;
+width: 120px;
   height: 120px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #000 40%, #111 60%, #000 90%);
-  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6);
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #000 40%, #111 60%, #000 90%);
+  box-shadow: 0 0 30px 12px rgba(0,0,0,0.6);
   transform: translate(-50%, -50%);
   animation: spin 8s linear infinite;
 }
