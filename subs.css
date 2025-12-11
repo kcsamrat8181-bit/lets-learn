@@ -311,53 +311,31 @@ section#section2 {
   background: green;
 }
 
-/* The VOID */
-#void-spot {
+#black-hole {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(0,0,0,0.9) 60%, rgba(0,0,0,0) 100%);
-    pointer-events: none; /* mouse cannot touch it */
-    z-index: 3;
-    filter: blur(2px);
-}
-  .fake-cursor {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 5;
+    background: radial-gradient(circle at 30% 30%, #000 40%, #222 80%, rgba(0,0,0,0) 100%);
+    box-shadow: 0 0 40px 5px rgba(255,255,255,0.05), inset 0 0 15px rgba(255,255,255,0.03);
+    top: 100px; 
+    left: 100px; 
 }
 
-/* Light bending illusion */
-body.distort {
-    transform: scale(1.02);
-    transition: transform 0.2s ease;
+@keyframes rotateAxis {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-/* Page content */
-.content {
-    padding: 200px 40px;
-    max-width: 700px;
-    margin: auto;
+#black-hole {
+    animation: rotateAxis 10s linear infinite;
+}
+
+.hero-section .content {
+    position: relative;
+    padding: 200px 40px 0;
     text-align: center;
+    color: #fff;
 }
 
-.content h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-.content p {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-    opacity: 0.9;
-}
 
