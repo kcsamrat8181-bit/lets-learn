@@ -133,19 +133,22 @@ let angle = 0;
 
 function moveBlackHole() {
   const bh = document.getElementById("blackhole");
+  const section = document.getElementById("hero-section");
 
-  // radius of movement
-  const radius = 80;
+  const width = section.offsetWidth;
+  const height = section.offsetHeight;
 
-  // center of screen
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
+  // ellipse sizes
+  const radiusX = width * 0.35;   // horizontal stretch
+  const radiusY = height * 0.15;  // vertical stretch (smaller for ellipse)
 
-  // slow orbit movement
-  angle += 0.002;
+  const centerX = width / 2;
+  const centerY = height / 2;
 
-  const x = centerX + radius * Math.cos(angle);
-  const y = centerY + radius * Math.sin(angle);
+  angle += 0.002; // speed (very slow)
+
+  const x = centerX + radiusX * Math.cos(angle);
+  const y = centerY + radiusY * Math.sin(angle);
 
   bh.style.left = x + "px";
   bh.style.top = y + "px";
