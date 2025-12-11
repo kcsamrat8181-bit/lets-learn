@@ -125,40 +125,50 @@ setInterval(createStar, 40);
   </section>
 
 <section id="section2">
-  <div class="blackhole"></div>
-</section>
+  <div id="void-spot"></div>
 
-  <script>
-let angle = 0;
+    <section class="content">
+        <h1>Welcome to My Website</h1>
+        <p>
+            This page has a permanent void in space.  
+            Move your cursor around and feel how reality bends.
+        </p>
 
-function moveBlackHole() {
-  const bh = document.getElementById("blackhole");
-  const section = document.getElementById("hero-section");
+<script>
+const voidSpot = document.getElementById("void-spot");
 
-  const width = section.offsetWidth;
-  const height = section.offsetHeight;
+const VOID_RADIUS = 120;
 
-  // ellipse sizes
-  const radiusX = width * 0.35;   // horizontal stretch
-  const radiusY = height * 0.15;  // vertical stretch (smaller for ellipse)
+document.addEventListener("mousemove", (e) => {
+    const rect = voidSpot.getBoundingClientRect();
 
-  const centerX = width / 2;
-  const centerY = height / 2;
+    const voidX = rect.left + rect.width / 2;
+    const voidY = rect.top + rect.height / 2;
 
-  angle += 0.002; // speed (very slow)
+    const dx = e.clientX - voidX;
+    const dy = e.clientY - voidY;
+    const distance = Math.sqrt(dx * dx + dy * dy);
 
-  const x = centerX + radiusX * Math.cos(angle);
-  const y = centerY + radiusY * Math.sin(angle);
+    // If mouse enters the forbidden zone, push it back
+    if (distance < VOID_RADIUS) {
+        const angle = Math.atan2(dy, dx);
+        const pushX = voidX + Math.cos(angle) * VOID_RADIUS;
+        const pushY = voidY + Math.sin(angle) * VOID_RADIUS;
 
-  bh.style.left = x + "px";
-  bh.style.top = y + "px";
+        window.scrollBy({
+            left: (pushX - e.clientX) * 0.05,
+            top: (pushY - e.clientY) * 0.05,
+            behavior: "smooth",
+        });
 
-  requestAnimationFrame(moveBlackHole);
-}
+        document.body.classList.add("distort");
+    } else {
+        document.body.classList.remove("distort");
+    }
+});
 
-moveBlackHole();
 </script>
-
+    </section>
   
 </body>
 </html>
