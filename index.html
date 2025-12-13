@@ -154,6 +154,21 @@ setInterval(createStar, 40);
     </div>
 
   </div>
+
+    <script>
+    const items = document.querySelectorAll(".timeline-item");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelector(".content").style.opacity = 1;
+      entry.target.querySelector(".content").style.transform = "translateY(0)";
+    }
+  });
+}, { threshold: 0.3 });
+
+items.forEach(item => observer.observe(item));
+    </script>
 </section>
 
   
