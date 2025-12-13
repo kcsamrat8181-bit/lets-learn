@@ -125,35 +125,7 @@ setInterval(createStar, 40);
   </section>
 
 <section id="section2">
-  <div id="black-hole"></div>
-<script>
-const blackHole = document.getElementById("black-hole");
-
-// Orbit parameters
-const centerX = 300; // horizontal center of ellipse
-const centerY = 120; // vertical center of ellipse
-const radiusX = 220; // horizontal radius
-const radiusY = 60;  // vertical radius
-const speed = 0.002; // orbit speed
-
-let angle = 0;
-
-function animate() {
-    angle += speed;
-
-    // Elliptical orbit
-    const x = centerX + Math.cos(angle) * radiusX;
-    const y = centerY + Math.sin(angle) * radiusY;
-
-    blackHole.style.left = x + "px";
-    blackHole.style.top = y + "px";
-
-    requestAnimationFrame(animate);
-}
-
-animate();
-
-</script>
+  
     </section>
   
 </body>
