@@ -303,4 +303,11 @@ section {
   border-radius: 6px;
 }
 
+section#section2 { 
+   height: 5000vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: #87CEEB;
+  font-family: Arial, sans-serif;
+}
 
