@@ -303,11 +303,89 @@ section {
   border-radius: 6px;
 }
 
-section#section2 { 
-   height: 5000vh;
-  margin: 0;
-  overflow-x: hidden;
-  background: #87CEEB;
-  font-family: Arial, sans-serif;
+.timeline-section {
+    padding: 140px 0;
+    background: #0b0b0f;
+    color: #fff;
 }
 
+.timeline-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 120px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(255,255,255,0.15);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    width: 50%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.timeline-item.left::after {
+    right: -5px;
+}
+
+.timeline-item.right::after {
+    left: -5px;
+}
+
+.timeline-item .content {
+    opacity: 0.6;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.timeline-item .year {
+    font-size: 0.9rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.timeline-item h3 {
+    margin: 12px 0;
+    font-weight: 400;
+}
+
+.timeline-item p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
