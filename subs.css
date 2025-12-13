@@ -294,7 +294,6 @@ section {
   padding: 40px;
 }
 
-/* Button styling */
 .scroll-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -311,22 +310,3 @@ section#section2 {
   background: green;
 }
 
-#black-hole {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, #000 40%, #222 80%, rgba(0,0,0,0) 100%);
-    box-shadow: 0 0 40px 5px rgba(255,255,255,0.05), inset 0 0 15px rgba(255,255,255,0.03);
-    top: 100px; 
-    left: 100px; 
-}
-
-@keyframes rotateAxis {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-#black-hole {
-    animation: rotateAxis 10s linear infinite;
-}
