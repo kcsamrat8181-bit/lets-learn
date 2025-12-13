@@ -306,5 +306,6 @@ section#section2 {
   height: 1000vh;
   position: fixed;
   background: #87CEEB;
+  overflow-x: hidden;
 }
 
