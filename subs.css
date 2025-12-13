@@ -1,7 +1,6 @@
 section#section1 {
   height: 420vh;
   margin: 0;
-  overflow-x: hidden;
   background: linear-gradient(to bottom, #001, #87CEEB);
   font-family: Arial, sans-serif;
 }
@@ -35,7 +34,7 @@ section#section1 {
 }
 
 .sun {
-  position: relative;
+  position: sticky;
   bottom: 0;
   right: 30px;
   width: 150px;
