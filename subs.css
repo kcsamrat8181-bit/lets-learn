@@ -229,7 +229,7 @@ section#section1 {
   text-align: center;
   transition: 0.3s ease;
   border: 2px solid transparent;
-  boc-shadow: 0 0 20px rgba(0, 225, 225, 0);
+  box-shadow: 0 0 20px rgba(0, 225, 225, 0);
 }
 
 .glow-card:hover {
@@ -303,7 +303,7 @@ section {
   border-radius: 6px;
 }
 
-section#section2 {
+section.section2 {
     padding: 140px 0;
     background: black;
 }
