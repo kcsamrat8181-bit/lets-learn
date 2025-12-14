@@ -289,20 +289,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  height: 100vh;
-  padding: 40px;
-}
-
-.scroll-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
 section.section2 {
     padding: 140px 0;
     background: black;
