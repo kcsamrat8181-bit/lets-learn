@@ -303,7 +303,7 @@ section {
   border-radius: 6px;
 }
 
-section#timeline-section {
+.timeline-section {
     padding: 140px 0;
     background: black;
 }
