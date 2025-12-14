@@ -291,7 +291,8 @@ html {
 
 section.section2 {
     padding: 140px 0;
-    background: black;
+    background: #0b0b0f;
+    color: #fff;
 }
 
 .timeline-title {
