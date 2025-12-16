@@ -151,6 +151,42 @@ setInterval(createStar, 40);
 
   </div>
 
+    <div class="case-studies">
+
+  <div class="case">
+    <button class="case-header">
+      <span class="case-title">Fable — Tote Bags</span>
+      <span class="case-year">2025</span>
+    </button>
+
+    <div class="case-body">
+      <p class="case-intro">
+        A bag brand designed like a story, not a product.
+      </p>
+
+      <img src="your-image.jpg" alt="Fable project">
+
+      <ul>
+        <li><strong>Problem:</strong> Bags felt loud and trend-driven.</li>
+        <li><strong>Idea:</strong> Minimal forms with storytelling.</li>
+        <li><strong>Result:</strong> A calm, timeless collection.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+    <script>
+  document.querySelectorAll(".case-header").forEach(button => {
+    button.addEventListener("click", () => {
+      const body = button.nextElementSibling;
+      body.classList.toggle("open");
+    });
+  });
+</script>
+
+
     <script>
     const items = document.querySelectorAll(".timeline-item");
 
