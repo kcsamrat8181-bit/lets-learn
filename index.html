@@ -479,48 +479,58 @@ items.forEach(item => observer.observe(item));
 </section>
 
   <script>
-  .idea-nebula-section {
-  position: relative;
-  height: 100vh;
-  background: radial-gradient(circle at center, #000010, #000000);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  overflow: hidden;
-  padding: 60px 20px;
-}
+ <script>
+const nebula = document.getElementById("nebula");
 
-.idea-nebula-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #0ff;
-}
+const ideas = [
+  "ZenByte AI Tools",
+  "Nepal Tech Education",
+  "Web Apps for Small Businesses",
+  "Clean UI Templates",
+  "Open Source Contributions",
+  "Interactive Learning Platforms",
+  "Future Mobile Apps",
+  "Calm Design Experiments"
+];
 
-.nebula {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  pointer-events: none;
-}
+ideas.forEach(idea => {
+  const star = document.createElement("div");
+  star.classList.add("idea-star");
+  
+  const size = 20 + Math.random() * 15; // size of the star
+  star.style.width = size + "px";
+  star.style.height = size + "px";
+  
+  star.style.top = Math.random() * 90 + "%";
+  star.style.left = Math.random() * 90 + "%";
+  
+  star.title = idea; // hover tooltip
+  nebula.appendChild(star);
+  
+  // floating animation
+  let dx = (Math.random() - 0.5) * 0.5;
+  let dy = (Math.random() - 0.5) * 0.5;
+  
+  function float() {
+    const rect = star.getBoundingClientRect();
+    let top = parseFloat(star.style.top);
+    let left = parseFloat(star.style.left);
+    
+    top += dy;
+    left += dx;
+    
+    if (top < 0 || top > 90) dy *= -1;
+    if (left < 0 || left > 90) dx *= -1;
+    
+    star.style.top = top + "%";
+    star.style.left = left + "%";
+    
+    requestAnimationFrame(float);
+  }
+  float();
+});
+</script>
 
-.idea-star {
-  position: absolute;
-  background: radial-gradient(circle, #0ff, rgba(0, 255, 255, 0.2));
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.8;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.idea-star:hover {
-  transform: scale(1.5);
-  opacity: 1;
-  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset;
-}
     </script> 
   
 </body>
