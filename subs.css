@@ -279,6 +279,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.devil p {
+  color: red;
+  font-size: 25px;
+}
 section.section2 {
     padding: 140px 0;
     background: black;
