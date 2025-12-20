@@ -536,6 +536,8 @@ section.section2 {
   max-width: 1000px;
   margin: auto;
   display: grid;
+  background: black;
+  color: white;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
 }
