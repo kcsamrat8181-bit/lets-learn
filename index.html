@@ -516,12 +516,12 @@ buttons.forEach(btn => {
       display.value = "";
     } else if (btn.classList.contains("equal")) {
       try {
-        // 90% chance to give funny wrong answer
+     
         const randomMistake = Math.random();
         let result = eval(currentInput);
 
         if (randomMistake < 0.9) { 
-          // 90% chance
+          
           const funnyAdd = Math.floor(Math.random() * 10 + 1);
           result += funnyAdd;
           display.value = `Oops! ${result} 😅`;
