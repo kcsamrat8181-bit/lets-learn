@@ -500,7 +500,7 @@ ideas.forEach(idea => {
   label.textContent = idea;
   star.appendChild(label);
   
-  const size = 20 + Math.random() * 15; // star size
+  const size = 20 + Math.random() * 15;
   star.style.width = size + "px";
   star.style.height = size + "px";
   
@@ -509,7 +509,6 @@ ideas.forEach(idea => {
   
   nebula.appendChild(star);
   
-  // floating animation
   let dx = (Math.random() - 0.5) * 0.3;
   let dy = (Math.random() - 0.5) * 0.3;
   
