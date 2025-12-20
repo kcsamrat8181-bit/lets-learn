@@ -34,16 +34,6 @@ section#section1 {
   background-repeat: no-repeat;
 }
 
-.sun {
-  position: fixed;
-  bottom: 0;
-  right: 30px;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle, #FFD700, #FFA500);
-  border-radius: 50%;
-  transition: bottom 0.2s ease-out;
-}
 
 .glow-button {
   padding: 12px 24px;
