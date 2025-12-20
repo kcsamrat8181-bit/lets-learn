@@ -593,3 +593,42 @@ section.new-ideas {
     grid-column: span 1;
   }
 }
+
+.new-ideas .idea-block {
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(0, 255, 255, 0.05);
+  transition: 0.4s ease, transform 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.new-ideas .idea-block::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0,255,255,0.15), transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.new-ideas .idea-block:hover::before {
+  top: -20%;
+  left: -20%;
+  transform: rotate(0deg);
+}
+
+.new-ideas .idea-block h3,
+.new-ideas .idea-block p {
+  position: relative;
+  z-index: 1;
+}
+
+.new-ideas .idea-block:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: cyan;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+}
