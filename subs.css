@@ -675,3 +675,35 @@ section.new-ideas {
   opacity: 1;
   box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset;
 }
+
+.idea-star {
+  position: absolute;
+  background: radial-gradient(circle, #0ff, rgba(0, 255, 255, 0.2));
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.idea-star span {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0ff;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.idea-star:hover {
+  transform: scale(1.5);
+  opacity: 1;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+}
+
+.idea-star:hover span {
+  opacity: 1;
+}
